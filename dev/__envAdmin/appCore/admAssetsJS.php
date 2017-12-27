@@ -1,0 +1,16 @@
+<script src="<?=$appRoot?>/__envAdmin/js/jquery-1.11.1.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/bootstrap.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/datatables/1.10.16/js/jquery.dataTables.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/chart.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/chart-data.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/easypiechart.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/easypiechart-data.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/bootstrap-datepicker.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/tableDragger/table-dragger.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/block-ui/jquery.blockUI.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/toastr/toastr.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/bootbox/bootbox.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/dropzonejs/dropzone.min.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/custom.js"></script>
+<script src="<?=$appRoot?>/__envAdmin/js/validate/0.12.0/validate.min.js"></script>

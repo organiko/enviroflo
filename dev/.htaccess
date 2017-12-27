@@ -1,0 +1,4 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^Welcome?$    index.php?checkIndexAccess=WelcomeToEnviroflo    [NC,L]    # Handle requests for "Category"
+RewriteRule    ^Category/([A-Za-z0-9-]+)/?$    appCategory.php?appSec=$1    [NC,L]    # Handle requests for "Category"
+RewriteRule    ^OurClients/([A-Za-z0-9-]+)/?$    appClient.php?appSec=$1    [NC,L]    # Handle requests for "Category"

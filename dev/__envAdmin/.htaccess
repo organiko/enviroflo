@@ -1,0 +1,6 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule    ^adminPanel/([A-Za-z0-9-]+)/?$    adminPanel.php?Control=$1    [NC,L]    # Handle requests for "adminPanel"
+RewriteRule    ^adminPanel/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    adminPanel.php?Control=$1&Action=$2    [NC,L]    # Handle requests for "adminPanel"
+RewriteRule    ^adminPanel/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    adminPanel.php?Control=$1&Action=$2&Key=$3    [NC,L]    # Handle requests for "adminPanel"
+RewriteRule    ^appDataAPI/([A-Za-z0-9-]+)/?$    blockControlData.php?dataSec=$1   [NC,L]    # Handle requests for "blockControlData"
+RewriteRule    ^appDataAPI/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    blockControlData.php?dataSec=$1&varData=$2   [NC,L]    # Handle requests for "blockControlData"
