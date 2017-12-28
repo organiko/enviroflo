@@ -1,5 +1,5 @@
 <?php
-    $dbHomeClient = $dbHome->activeClients();
+    $dbHomeClient = $dbHome->activeClients("RAND()");
 ?>
 <style>
     .homeClientLogo

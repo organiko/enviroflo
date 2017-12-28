@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <div class="container content-sm">
     <div class="row">
         <div class="col-md-4 content-boxes-v6 md-margin-bottom-50">
