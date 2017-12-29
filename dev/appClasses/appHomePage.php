@@ -31,4 +31,9 @@ class appHomePage
     {
         return $this->dbCon->dbSelect("SELECT client_id, clnt, client_order, client_logo, client_country, client_market, client_name, client_text, client_url, client_status FROM %appDBprefix%_home_client WHERE client_status = true ORDER BY ".$orderBy);
     }
+
+    public function activeCategory($orderBy='category_id ASC')
+    {
+        return $this->dbCon->dbSelect("SELECT category_id, clnt, category_order, category_image, category_desc, category_text, category_url, category_status FROM %appDBprefix%_home_category WHERE category_status = true ORDER BY ".$orderBy);
+    }
 }
