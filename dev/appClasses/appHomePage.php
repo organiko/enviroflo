@@ -36,4 +36,9 @@ class appHomePage
     {
         return $this->dbCon->dbSelect("SELECT category_id, clnt, category_order, category_image, category_desc, category_text, category_url, category_status FROM %appDBprefix%_home_category WHERE category_status = true ORDER BY ".$orderBy);
     }
+
+    public function activeService($orderBy='service_id ASC')
+    {
+        return $this->dbCon->dbSelect("SELECT service_id, clnt, service_order, service_image, service_name, service_text, CONCAT(SUBSTRING_INDEX(service_text, ' ', 10),'...') AS service_home_text, service_status FROM %appDBprefix%_home_service WHERE service_status = true ORDER BY ".$orderBy);
+    }
 }
