@@ -4,9 +4,9 @@
 
     use app\homeData\appHomePage as homeBlocks;
     $dbCon = new homeBlocks();
-    $dbHomeClient = $dbCon->activeClients();
-    $clientSec = str_replace("-"," ",$_REQUEST['appSec']);
-    $clientID = $_REQUEST['appSec'];
+    $dbHomePartner = $dbCon->activePartner();
+    $partnerSec = str_replace("-"," ",$_REQUEST['appSec']);
+    $partnerID = $_REQUEST['appSec'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,10 +31,10 @@
         <!--=== Breadcrumbs ===-->
         <div class="breadcrumbs">
             <div class="container">
-                <h1 class="pull-left">Our Clients</h1>
+                <h1 class="pull-left">Our Partners</h1>
                 <ul class="pull-right breadcrumb">
                     <li><a href="<?=$appRoot?>">Home</a></li>
-                    <li class="active">Our Clients</li>
+                    <li class="active">Our Partners</li>
                 </ul>
             </div>
         </div><!--/breadcrumbs-->
@@ -44,24 +44,24 @@
             <div class="row">
                 <div class="col-md-9">
                     <?php
-                        foreach ($dbHomeClient['rsData'] as $key=>$clientData) {
+                        foreach ($dbHomePartner['rsData'] as $key=>$partnerData) {
                             ?>
 
                             <!-- Clients Block-->
                             <div class="row clients-page" style="padding-bottom: 20px;">
                                 <div class="col-md-2">
-                                    <img src="<?=$appRoot?>/images/clientLogo/<?=$clientData['client_logo']?>" class="img-responsive hover-effect" alt="<?=$clientData['client_name']?>"/>
+                                    <img src="<?=$appRoot?>/images/partnerLogo/<?=$partnerData['partner_logo']?>" class="img-responsive hover-effect" alt="<?=$partnerData['partner_name']?>"/>
                                 </div>
                                 <div class="col-md-10">
-                                    <h3 class="<?=str_replace(" ","-",$clientData['client_name'])?>"><strong><?=$clientData['client_name']?></strong></h3>
+                                    <h3 class="<?=str_replace(" ","-",$partnerData['partner_name'])?>"><strong><?=$partnerData['partner_name']?></strong></h3>
                                     <ul class="list-inline">
-                                        <li><i class="fa fa-map-marker color-green"></i> <?=$clientData['client_country']?></li>
-                                        <li><i class="fa fa-globe color-green"></i> <a class="linked" href="<?=$clientData['client_url']?>"><?=$clientData['client_url']?></a>
+                                        <li><i class="fa fa-map-marker color-green"></i> <?=$partnerData['partner_country']?></li>
+                                        <li><i class="fa fa-globe color-green"></i> <a class="linked" target="_blank" href="<?=$partnerData['partner_url']?>"><?=$partnerData['partner_url']?></a>
                                         </li>
-                                        <li><i class="fa fa-briefcase color-green"></i> <?=$clientData['client_market']?>
+                                        <li><i class="fa fa-briefcase color-green"></i> <?=$partnerData['partner_market']?>
                                         </li>
                                     </ul>
-                                    <p><?=$clientData['client_text']?></p>
+                                    <p><?=$partnerData['partner_text']?></p>
                                 </div>
                             </div>
                             <!-- End Clients Block-->
@@ -148,7 +148,7 @@
 
         jQuery(document).ready(function()
         {
-            document.querySelector('.<?=$clientID?>').scrollIntoView({ behavior: 'smooth' });
+            document.querySelector('.<?=$partnerID?>').scrollIntoView({ behavior: 'smooth' });
         });
 
 

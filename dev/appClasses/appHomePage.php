@@ -27,9 +27,9 @@ class appHomePage
         return $this->dbCon->dbSelect("SELECT slide_id, clnt, slide_order, slide_file, slide_title, slide_text, slide_link_01_title, slide_link_01_url, slide_link_02_title, slide_link_02_url, slide_status FROM %appDBprefix%_home_slider WHERE slide_status = true ORDER BY slide_order ASC");
     }
 
-    public function activeClients($orderBy='client_order ASC')
+    public function activePartner($orderBy='partner_order ASC')
     {
-        return $this->dbCon->dbSelect("SELECT client_id, clnt, client_order, client_logo, client_country, client_market, client_name, client_text, client_url, client_status FROM %appDBprefix%_home_client WHERE client_status = true ORDER BY ".$orderBy);
+        return $this->dbCon->dbSelect("SELECT partner_id, clnt, partner_order, partner_logo, partner_country, partner_market, partner_name, partner_text, partner_url, partner_status FROM %appDBprefix%_home_partner WHERE partner_status = true ORDER BY ".$orderBy);
     }
 
     public function activeCategory($orderBy='category_id ASC')

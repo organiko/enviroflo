@@ -81,7 +81,7 @@
 
         <!--=== Our Clients ===-->
         <?php
-            include("appBlocks/ourClients.php");
+            include("appBlocks/ourPartners.php");
         ?>
         <!--=== End Our Clients ===-->
 
