@@ -10,3 +10,4 @@ require_once "appDBClass.php";
 require_once "appHomePage.php";
 require_once "appUserLogin.php";
 require_once "appUserControl.php";
+require_once "appProductData.php";

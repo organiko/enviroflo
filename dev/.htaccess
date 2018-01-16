@@ -1,4 +1,6 @@
 RewriteEngine On    # Turn on the rewriting engine
-RewriteRule    ^Welcome?$    index.php?checkIndexAccess=WelcomeToEnviroflo    [NC,L]    # Handle requests for "Category"
+RewriteRule    ^Welcome?$    index.php?checkIndexAccess=WelcomeToEnviroflo    [NC,L]    # Handle requests for "Welcome"
 RewriteRule    ^Category/([A-Za-z0-9-]+)/?$    appCategory.php?appSec=$1    [NC,L]    # Handle requests for "Category"
-RewriteRule    ^OurPartners/([A-Za-z0-9-]+)/?$    appPartner.php?appSec=$1    [NC,L]    # Handle requests for "Category"
+RewriteRule    ^Product/([A-Za-z0-9-]+)/?$    appProduct.php?appSec=$1    [NC,L]    # Handle requests for "Product"
+RewriteRule    ^OurPartners/([A-Za-z0-9-]+)/?$    appPartner.php?appSec=$1    [NC,L]    # Handle requests for "Partners"
+RewriteRule    ^AboutUs?$    appAboutUs.php    [NC,L]    # Handle requests for "Category"

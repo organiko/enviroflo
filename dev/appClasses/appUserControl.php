@@ -107,7 +107,7 @@ class appUserControl
         {
             $vWhere = 'WHERE slide_id = '.$slideID;
         }
-        return $this->dbCon->dbSelect("SELECT slide_id, clnt, slide_order, slide_file, slide_title, slide_text, slide_link_01_title, slide_link_01_url, slide_link_02_title, slide_link_02_url, slide_status FROM %appDBprefix%_home_slider ".$vWhere." ORDER BY slide_order ASC, slide_order ASC");
+        return $this->dbCon->dbSelect("SELECT slide_id, clnt, slide_order, slide_file, slide_title, slide_text, slide_link_01_title, slide_link_01_url, slide_link_02_title, slide_link_02_url, slide_status FROM %appDBprefix%_home_slider ".$vWhere." ORDER BY slide_order ASC");
     }
 
     public function delHomePageSlider($slideID=null)

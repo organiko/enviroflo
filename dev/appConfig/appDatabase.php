@@ -13,7 +13,7 @@
 ; Avoid placing it under your document root
 
 [database_settings]
-dbServer = "localhost"
+dbServer = "enviroflo_db"
 dbUser = "root"
 dbPwd = "muriel"
 dbName = "enviroflo"

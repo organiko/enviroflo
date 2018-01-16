@@ -1,44 +1,33 @@
-<!-- Home -->
-<li class="dropdown active">
-    <a href="<?=$appRoot?>/Category/Liquid-Robotics-Enclosures" class="dropdown-toggle text-center ">
-        Liquid Robotics<br>Enclosures
+<li class="dropdown" id="Lab-Automation-Robotics-Enclosures">
+    <a href="<?=$appRoot?>/Category/Lab-Automation-Robotics-Enclosures" class="dropdown-toggle text-center ">
+        Lab Automation<br>Robotics Enclosures
     </a>
 </li>
-<!-- End Home -->
-
-<!-- Pages -->
-<li class="dropdown">
+<li class="dropdown" id="Containment-Enclosures">
     <a href="<?=$appRoot?>/Category/Containment-Enclosures" class="dropdown-toggle text-center">
         Containment<br>Enclosures
     </a>
 </li>
-<!-- End Pages -->
-
-<!-- Blog -->
-<li class="dropdown">
+<li class="dropdown" id="Biological-Safety-Cabinets">
     <a href="<?=$appRoot?>/Category/Biological-Safety-Cabinets" class="dropdown-toggle text-center">
         Biological<br>Safety Cabinets
     </a>
 </li>
-<!-- End Blog -->
-
-<!-- Portfolio -->
-<li class="dropdown">
-    <a href="<?=$appRoot?>/Category/Scientific-Equipment" class="dropdown-toggle text-center">
-        Scientific<br>Equipment
+<li class="dropdown" id="Lab-Bubble">
+    <a href="<?=$appRoot?>/Category/Lab-Bubble" class="dropdown-toggle text-center">
+        Lab<br>Bubble
     </a>
 </li>
-<!-- End Portfolio -->
-
-<!-- Features -->
-<li class="dropdown">
+<li class="dropdown" id="Laboratory-Scientific-Equipment">
+    <a href="<?=$appRoot?>/Category/Laboratory-Scientific-Equipment" class="dropdown-toggle text-center">
+        Laboratory<br/>Scientific Equipment
+    </a>
+</li>
+<li class="dropdown" id="Modular-Cleanrooms">
     <a href="<?=$appRoot?>/Category/Modular-Cleanrooms" class="dropdown-toggle text-center">
         Modular<br>Cleanrooms
     </a>
 </li>
-<!-- End Features -->
-
-<!-- Shortcodes -->
 <li class="dropdown mega-menu-fullwidth">
     <a href="javascript:void(0);" class="dropdown-toggle text-center" data-toggle="dropdown">
         Support<br>Center
@@ -134,72 +123,3 @@
         </li>
     </ul>
 </li>
-<!-- End Shortcodes -->
-
-
-
-<?php
-/*
-<!-- Demo Pages -->
-<li class="dropdown mega-menu-fullwidth">
-    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-        Demos
-    </a>
-    <ul class="dropdown-menu">
-        <li>
-            <div class="mega-menu-content disable-icons">
-                <div class="container">
-                    <div class="row equal-height">
-                        <div class="col-md-3 equal-height-in">
-                            <ul class="list-unstyled equal-height-list">
-                                <li><a href="One-Pages/Accounting/index.html">Accounting</a></li>
-                                <li><a href="One-Pages/Agency/index.html">Agency</a></li>
-                                <li><a href="One-Pages/Architecture/index.html">Architecture</a></li>
-                                <li><a href="One-Pages/Business/index.html">Business</a></li>
-                                <li><a href="One-Pages/Charity/index.html">Charity</a></li>
-                                <li><a href="Landing-Pages/Consulting/index.html">Consulting</a></li>
-                                <li><a href="One-Pages/Courses/index.html">Courses</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="col-md-3 equal-height-in">
-                            <ul class="list-unstyled equal-height-list">
-                                <li><a href="One-Pages/Construction/index.html">Construction</a></li>
-                                <li><a href="One-Pages/Event/index.html">Event <small class="color-red">New</small></a></li>
-                                <li><a href="One-Pages/Gym/index.html">Gym</a></li>
-                                <li><a href="One-Pages/Lawyer/index.html">Lawyer</a></li>
-                                <li><a href="One-Pages/App/index.html">Mobile App</a></li>
-                                <li><a href="One-Pages/Music/index.html">Music</a></li>
-                                <li><a href="One-Pages/Photographer/index.html">Photographer</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 equal-height-in">
-                            <ul class="list-unstyled equal-height-list">
-                                <li><a href="One-Pages/Restaurant/index.html">Restaurant</a></li>
-                                <li><a href="One-Pages/RealEstate/index.html">Real Estate</a></li>
-                                <li><a href="One-Pages/Shipping/index.html">Shipping</a></li>
-                                <li><a href="One-Pages/Spa/index.html">Spa</a></li>
-                                <li><a href="One-Pages/Travel/index.html">Travel</a></li>
-                                <li><a href="Landing-Pages/Wealth/index.html">Wealth</a></li>
-                                <li><a href="One-Pages/Wedding/index.html">Wedding</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-3 equal-height-in">
-                            <ul class="list-unstyled equal-height-list">
-                                <li><a href="One-Pages/Hero-Fashion/index.html">Hero Fashion</a></li>
-                                <li><a href="One-Pages/Hero-Gym/index.html">Hero Gym</a></li>
-                                <li><a href="One-Pages/Hero-Photography/index.html">Hero Photography</a></li>
-                                <li><a href="One-Pages/Hero-Restaurant/index.html">Hero Restaurant</a></li>
-                                <li><a href="One-Pages/Hero-WebApp/index-dark.html">Hero Web App Dark</a></li>
-                                <li><a href="One-Pages/Hero-WebApp/index.html">Hero Web App Light</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </li>
-    </ul>
-</li>
-<!-- End Demo Pages -->
-*/
-?>

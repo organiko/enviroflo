@@ -1,3 +1,16 @@
+<style>
+    #navBarMenuHeader
+    {
+    }
+    #navBarMenuHeader > li > a
+    {
+       font-size: 8pt!important;
+       /* color: #0a5d5e;
+       */
+       font-weight: bold;
+    }
+</style>
+
 		<div class="header">
 			<div class="container">
 				<!-- Logo -->
@@ -23,7 +36,7 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse mega-menu navbar-responsive-collapse">
 				<div class="container">
-					<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav" id="navBarMenuHeader" style="margin-top: 20px!important;">
                         <!-- Menu -->
                         <?php
                             include("headerMenu.php");

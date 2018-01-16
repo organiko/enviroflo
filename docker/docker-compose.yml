@@ -1,0 +1,24 @@
+enviroflo:
+  build: .
+  dockerfile: /etc/docker/ocs_app.docker
+  volumes:
+    - ../dev:/var/www/html
+    - ./etc/php:/usr/local/etc/php
+    - ./etc/php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
+    - ./etc/apache2/httpd.conf:/etc/apache2/conf-enabled/apache2.conf
+    - ./etc/apache2/hosts.conf:/etc/apache2/sites-enabled/hosts.conf
+  ports:
+    - "8000:80"
+    - "4431:443"
+  links:
+    - enviroflo_db
+enviroflo_db:
+    restart: 'always'
+    image: mysql:5.6
+    environment:
+        - "MYSQL_ROOT_PASSWORD=muriel"
+        - "MYSQL_DATABASE=enviroflo"
+    ports:
+        - "33061:3306"
+    volumes:
+        - ./db_data/mysql:/var/lib/mysql
